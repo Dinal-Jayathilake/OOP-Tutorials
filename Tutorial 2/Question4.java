@@ -1,15 +1,11 @@
 package Tutorial2;
 
 public class Question4 {
-    private int cans,tokens;
-
-    public Question4() {
-        cans = tokens = 0;
-    }
-
     public static void main(String[] args) {
-        public void fillUp(int cans) {
-
-        }
+        var vend = new VendingMachine();
+        vend.fillUp(10);
+        vend.insertToken();
+        System.out.println("Number Of Cans: " + vend.getCanCount());
+        System.out.println("Number Of Tokens: " + vend.getTokenCount());
     }
 }
